@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "98574f97-2fcb-4466-a73b-184e2921edcf",
+		"name": "Dhruv",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/tourPackage/1234567",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tourPackage",
+						"1234567"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Package",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"package_id\": \"1234568\",\r\n    \"source_place\": \"Goa\",\r\n    \"destination_place\": \"Bangalore\",\r\n    \"fare\": 10000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/tourPackage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tourPackage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cost",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Package",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
